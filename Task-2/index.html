@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Gloock&family=Lobster&family=Overpass:wght@100&display=swap" rel="stylesheet">    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "" || x == null) {
+                alert("FirstName must be filled out");
+                return false;
+            }
+            let y = document.forms["myForm"]["lname"].value;
+            if (y == "" || y == null) {
+                alert("LastName must be filled out");
+                return false;
+            }
+            let z = document.forms["myForm"]["email"].value;
+            if (z == "" || z == null) {
+                alert("Enter Email id");
+                return false;
+            }
+
+            let a = document.forms["myForm"]["number"].value;
+            if (a == "" || a == null || a.length < 10 || a.length > 11) {
+                alert("Enter 10 digits Phone Number");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="All">
+        <section class="contact" id="contact">
+            <h1 class="heading"><span>Sign up </span> </h1>
+            <div class="row" style="border: 1px solid black; border-top-width: 0; border-radius: 0px 0px 20px 20px;">
+                <form action="" name="myForm" onsubmit="return validateForm()">
+                    <p><br>
+                        <b class="A" style="padding-bottom: 10px;"> Name :&nbsp;</b>
+                        
+                        <input type="text" placeholder=" Enter First name" class="box" name="fname" >
+                        <br><br>
+                    </p>
+                    <p>
+                    <b>Last Name :&nbsp;</b>
+                        <input type="text" placeholder=" Enter Last name" class="box" name="lname"><br><br>
+                    </p>
+                    <p>
+                        <b>Email :&nbsp;</b>
+                        <input type="email" placeholder="Enter E-mail" class="box" name="email"><br><br>
+                    </p>
+                    <p>
+                        <b>Phone Number :&nbsp;</b>
+                        <input type="number" placeholder="Enter Phone Number" class="box" name="number" maxlength="10"
+                            size="10"><br><br>
+                    </p>
+                    <p>
+                        <b>Password :&nbsp;</b>
+                        <input type="password" placeholder="Enter your Password" class="box" id="password"><br><br>
+                    </p>
+                    <p>
+                        <b>Confirm Password :&nbsp;</b>
+                        <input type="password" id="password" placeholder="Re-enter your password" class="box"><br><br>
+                    </p>
+                    <div class="Register">
+                        <input type="submit" value="Register">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

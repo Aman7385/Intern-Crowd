@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+        
+}
+
+.All {
+    background-image: url("Register6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:initial;
+    padding-bottom: 54px;
+    padding-top: 20px;
+}
+
+body{
+    overflow: hidden;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+    padding: 1rem;
+    margin: 2 rem 0;
+    background: linear-gradient(red, blue);
+    margin-bottom: 2cm;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid black;
+    font-family: 'Gloock', serif;
+}
+
+.contact {
+    width: 30%;
+    height: 30%;
+    position: center;
+    margin-left: 35%;
+    background-image: url(Register6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:initial;
+    font-size: 18px;
+    
+
+    overflow: hidden;
+}
+
+.contact .row {
+    margin-top: -2cm;
+
+}
+
+.contact .row form {
+    width: 80%;
+    margin-left: 6%;
+    padding: 10px;
+}
+
+.contact .row form .box {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: .1rem solid rgba(35, 31, 31, 0.1);
+    border-radius: .5rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url("Register4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 5px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    margin-bottom: 10px;
+    margin-left: 46%;
+    border-width: 1px;
+    font-weight: bold;
+}
+
+
+::-webkit-input-placeholder{
+    color: #c8c2c2;
+}
